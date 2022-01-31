@@ -1,0 +1,5 @@
+build:
+  docker:
+      worker: /Taurus/Dockerfile
+run:
+   worker: npm start
