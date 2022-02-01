@@ -153,7 +153,7 @@
         },
         "profile": {
             "KICKME_DESC": "It kicks you from the group you are using it in.",
-            "KICKME": "```Bye bye! Lizamwol ini varathilla 🥲```",
+            "KICKME": "```𝑩𝒚𝒆 𝑩𝒚𝒆 𝑨𝒍𝒍 𝑰𝒕𝒔 𝑻𝒊𝒎𝒆 𝑻𝒐 𝑳𝒆𝒂𝒗𝒆```",
             "PP_DESC": "Makes the profile photo what photo you reply.",
             "NEED_PHOTO": "*Give me a photo!*",
             "PPING": "```Setting profile photo...```",
@@ -239,14 +239,14 @@
         },
         "updater": {
             "UPDATER_DESC": "Checks the update.",
-            "UPDATE": "*Your bot is completely up-to-date!*",
-            "NEW_UPDATE": "*New update available for Bot!*\n\nChanges:\n```",
+            "UPDATE": "*𝒀𝒐𝒖𝒓 𝑻𝒂𝒖𝒓𝒖𝒔 𝑰𝒔 𝑪𝒐𝒎𝒑𝒍𝒆𝒕𝒆𝒍𝒚 𝑼𝒑-𝑻𝒐-𝑫𝒂𝒕𝒆*",
+            "NEW_UPDATE": "*𝑻𝒉𝒆𝒓𝒆 𝑰𝒔 𝑵𝒆𝒘 𝑼𝒑𝒅𝒂𝒕𝒆 𝑭𝒐𝒖𝒏𝒅 𝑰𝒏 𝒀𝒐𝒖𝒓 𝑻𝒂𝒖𝒓𝒖𝒔*\n\n𝑵𝒆𝒘 𝑪𝒉𝒂𝒏𝒈𝒆𝒔:\n```",
             "UPDATE_NOW_DESC": "It makes updates.",
-            "UPDATING": "```Povalle Update cheyyatte...👻```",
+            "UPDATING": "```𝑼𝒑𝒅𝒂𝒕𝒊𝒏𝒈 𝑷𝒍𝒆𝒂𝒔𝒆 𝑾𝒂𝒊𝒕 𝑭𝒆𝒘 𝑴𝒊𝒏𝒖𝒕𝒆𝒔```",
             "INVALID_HEROKU": "*❌ Your Heroku app name or api key wrong!*",
-            "UPDATED": "*Update Kazinju🧚‍♀️✅*",
-            "UPDATED_LOCAL": "*✅ Updated!*",
-            "AFTER_UPDATE": "*👰 Liza mwol Restarting*",
+            "UPDATED": "*𝑼𝒑𝒅𝒂𝒕𝒆𝒅 𝑺𝒖𝒄𝒄𝒆𝒔𝒔𝒇𝒖𝒍𝒍𝒚*",
+            "UPDATED_LOCAL": "*𝑼𝒑𝒅𝒂𝒕𝒆𝒅*",
+            "AFTER_UPDATE": "*𝑻𝒂𝒖𝒓𝒖𝒔 𝑹𝒆𝒔𝒕𝒂𝒓𝒕𝒊𝒏𝒈 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄𝒂𝒍𝒍𝒚*",
             "IN_AF": "*Please check* ```HEROKU_APP_NAME``` *and* ```app name``` *They must be same.*\n*If these two values ​​are the same, please restore* ```HEROKU_API_KEY```\n\n_To access these settings, use Heroku >> App >> Settings >> Reavel Config Vars_\n_To renew your API key, follow these steps, Heroku >> Account >> API Key then replace old api key in config vars._"
         },
         "whois": {
