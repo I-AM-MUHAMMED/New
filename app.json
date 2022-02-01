@@ -1,7 +1,7 @@
 {
     "name": "TAURUS-X",
     "description": "Taurus Bot is the Modified Version of WhatsAsena, Made By @Chunkinde_padayali with Baileys.",
-    "logo": "https://i.imgur.com/2nYs8dN.jpg",
+    "logo": "https://i.ibb.co/vJ7HnvR/taurus.jpg",
     "keywords": ["whatsapp", "userbot", "Taurus", "WhatsAsena", "mwol", "bot", "ai"],
     "repository": "https://github.com/I-AM-MUHAMMED/TAURUS-X",
     "website":   "https://github.com/I-AM-MUHAMMED/TAURUS-X",
@@ -78,7 +78,7 @@
         "TAURUS_AI": {
             "description": "turn on chat back auto reply Taurus (use true to on and fale to off)",
             "required": true,
-            "value": "true"
+            "value": "false"
         },
         "NO_LOG": {
             "description": " Set true if you don't want to see error log.",
@@ -137,7 +137,7 @@
         "BOT_NAME": {
             "description": "heading for .list command reply",
             "required": false,
-            "value": "  𝐋𝐈𝐙𝐀 𝐌𝐖𝐎𝐋࿐  \n\n   *ωнαтsαρρ вσт™*   \n"
+            "value": "🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋\n"
         },
         "BOTV2_NAME": {
             "description": "heading for bgm command reply",
@@ -185,7 +185,7 @@
         "LG_LOGO": {
             "description": "LOGO list message image link(https://telegra.ph/)link.",
             "required": true,
-            "value": ""
+            "value": "https://i.ibb.co/vJ7HnvR/taurus.jpg"
         },
         "LOGO_NAME": {
             "description": "Set the logo list name",
