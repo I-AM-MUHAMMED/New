@@ -1,5 +1,5 @@
-/* Copyright (C) 2020 afnanplk
-PINKY V2
+/* Copyright (C) 2020 I-AM-MUHAMMED
+TAURUS-X
 */
 
 const Asena = require('../events');
