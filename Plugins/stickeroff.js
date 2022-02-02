@@ -1,5 +1,5 @@
-/* Copyright (C) 2021 farhan-dqz
-coded for juliemwol
+/* Copyright (C) 2021 I-AM-MUHAMMED
+codded for Taurus
 */
 
 const Julie = require('../events');
