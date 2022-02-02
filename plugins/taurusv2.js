@@ -1,8 +1,6 @@
-/* Amalser Bot
-Re-edit Amalser + I-AM-MUHAMMED
-*/
 
-const LizaMwol = require('../events');
+
+const Taurus = require('../events');
 const {MessageType, GroupSettingChange, Mimetype, MessageOptions} = require('@adiwajshing/baileys');
 const fs = require('fs');
 const Config = require('../config')
@@ -17,7 +15,7 @@ var ddd = ggg.toString('utf-8')
 
 let whb = Config.WORKTYPE == 'public' ? false : true
 
-LizaMwol.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
+Taurus.addCommand({pattern: 'alive', fromMe: whb, dontAddCommandList: true}, (async (message, match) => {
 // send a buttons message!credit Amal
     const buttons = [
         {buttonId: 'id1', buttonText: {displayText: Config.ALIVE_BUTTON }, type: 1},
