@@ -1,6 +1,6 @@
 {
   "name": "TAURUS",
-  "version": "7.3.6",
+  "version": "8.4.0",
   "description": "TAURUS is the Modified Version of WhatsAsena, Made By @I-AM-MUHAMMED with Baileys.",
   "main": "./Taurus-x/bot.js",
   "scripts": {
