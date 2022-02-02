@@ -1,4 +1,4 @@
-const Raganork = require('../events');
+const Taurus = require('../events');
 const {MessageType, MessageOptions, Mimetype} = require('@adiwajshing/baileys');
 const axios = require ('axios')
 const LOAD_ING = "*Loading image...*"
@@ -6,7 +6,7 @@ const Config = require('../config');
 
 if (Config.WORKTYPE == 'private') {
   
-  Raganork.addCommand({pattern: 'wallpaper ?(.*)', fromMe: true, desc: 'Sends random car wallpaper' , dontAddCommandList: true }, async (message, match) => {
+  Taurus.addCommand({pattern: 'wallpaper ?(.*)', fromMe: true, desc: 'Sends random car wallpaper' , dontAddCommandList: true }, async (message, match) => {
 
       var souravkl11 = await axios.get('https://server-api-rey.herokuapp.com/api/wallpaper/kucing?apikey=apirey', { responseType: 'arraybuffer' })
    
@@ -17,7 +17,7 @@ if (Config.WORKTYPE == 'private') {
  
 if (Config.WORKTYPE == 'public') {
     
-  Raganork.addCommand({pattern: 'wallpaper ?(.*)', fromMe: false, desc: 'Sends random car wallpaper' , dontAddCommandList: true }, async (message, match) => {
+  Taurus.addCommand({pattern: 'wallpaper ?(.*)', fromMe: false, desc: 'Sends random car wallpaper' , dontAddCommandList: true }, async (message, match) => {
 
       var souravkl11 = await axios.get('https://server-api-rey.herokuapp.com/api/wallpaper/kucing?apikey=apirey', { responseType: 'arraybuffer' })
    
