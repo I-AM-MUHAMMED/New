@@ -19,7 +19,7 @@ DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBU
 module.exports = {
     VERSION: 'v1.0.0 Global Stable',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.CONNECTION_CODE === undefined ? '' : process.env.CONNECTION_CODE,
+    SESSION: process.env.TAURUS_CODE === undefined ? '' : process.env.TAURUS_CODE,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
     AFN: process.env.ALL_CAPTION === undefined ? '🦋𝐓𝐀𝐔𝐑𝐔𝐒 𝐗 ࿐' : process.env.ALL_CAPTION,
