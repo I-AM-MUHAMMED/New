@@ -1,8 +1,8 @@
-/* Copyright (C) 2020 Yusuf Usta.
-
-WhatsAsena - Yusuf Usta
+/* Copyright (C) 2021 I-AM-MUHAMMED.
+Licensed under the GPL-3.0 License;
+You may not use this file except in compliance with the License;
+TAURUS-X - I-AM-MUHAMMED
 */
-
 
 const { Sequelize } = require('sequelize');
 const fs = require('fs');
@@ -17,60 +17,47 @@ DATABASE_URL = process.env.DATABASE_URL === undefined ? './whatsasena.db' : proc
 DEBUG = process.env.DEBUG === undefined ? false : convertToBool(process.env.DEBUG);
 
 module.exports = {
-    VERSION: 'v8.0.0',
+    VERSION: 'v1.0.0 Global Stable',
     CHANNEL: 'https://t.me/remasterplugin',
-    SESSION: process.env.TAURUS_SESSION === undefined ? '' : process.env.TAURUS_SESSION,
+    SESSION: process.env.CONNECTION_CODE === undefined ? '' : process.env.CONNECTION_CODE,
     ANTİLİNK: process.env.ANTİ_LİNK === undefined ? 'false' : process.env.ANTİ_LİNK,
     AUTOBİO: process.env.AUTO_BİO === undefined ? 'false' : process.env.AUTO_BİO,
+    AFN: process.env.ALL_CAPTION === undefined ? '🦋𝐓𝐀𝐔𝐑𝐔𝐒 𝐗 ࿐' : process.env.ALL_CAPTION,
     GANSTYLE: process.env.GAN_IMAGE === undefined ? 'https://i.hizliresim.com/loUtAb.jpg' : process.env.GAN_IMAGE,
-
-    PM_BLOCK: process.env.PM_BLOCK === undefined ? 'false' : process.env.PM_BLOCK,
     LANG: process.env.LANGUAGE === undefined ? 'TR' : process.env.LANGUAGE.toUpperCase(),
     ALIVEMSG: process.env.ALIVE_MESSAGE === undefined ? 'default' : process.env.ALIVE_MESSAGE,
     KICKMEMSG: process.env.KICKME_MESSAGE === undefined ? 'default' : process.env.KICKME_MESSAGE,
+    AUTOSTICKER: process.env.AUTO_STICKER === undefined ? 'true' : process.env.AUTO_STICKER,
+    PLK: process.env.OWNER_NAME === undefined ? '𝑴𝑼𝑯𝑨𝑴𝑴𝑬𝑫' : process.env.OWNER_NAME,
+    FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
+    BOT_PRESENCE: process.env.BOT_PRESENCE === undefined ? 'online' : process.env.BOT_PRESENCE,
     BLOCKCHAT: process.env.BLOCK_CHAT === undefined ? false : process.env.BLOCK_CHAT,
-    WELCOME: process.env.WELCOME === undefined ? 'pp' : process.env.WELCOME,
-    OWNER: process.env.OWNER_NAME === undefined ? 'default' : process.env.OWNER_NAME,
-    ALL: process.env.ALL_CAPTION === undefined ? 'TAURUS' : process.env.ALL_CAPTION,
-    MENTION: process.env.TAG_REPLY === undefined ? '919961050829@s.whatsapp.net' : process.env.TAG_REPLY,
     ADDMSG: process.env.ADD_MESSAGE === undefined ? 'default' : process.env.ADD_MESSAGE,
-    PLKS: process.env.THERI_LIST === undefined ? false : process.env.THERI_LIST,
     MUTEMSG: process.env.MUTE_MESSAGE === undefined ? 'default' : process.env.MUTE_MESSAGE,
+    GIF_WEL: process.env.GIF_WEL === undefined ? 'https://i.imgur.com/eGyyhGC.mp4' : process.env.GIF_WEL,
+    GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/fkUfDKB.mp4' : process.env.GIF_BYE,
     BGMFILTER: process.env.BGM_FILTER === undefined ? false : convertToBool(process.env.BGM_FILTER),
     DISBGM: process.env.DISABLE_JID_BGM_FILTER === undefined ? false : process.env.DISABLE_JID_BGM_FILTER,
-    STICKERP: process.env.AUTO_STICKER === undefined ? true : convertToBool(process.env.AUTO_STICKER),
-    DISSTICKER: process.env.DISABLE_STICKER === undefined ? false : process.env.DISABLE_STICKER,
-    BOTTAURUS: process.env.BOT_NAME === undefined ? '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋' : process.env.BOT_NAME,
     NOLOG: process.env.NO_LOG === undefined ? 'false' : process.env.NO_LOG,
-    THERI_KICK: process.env.THERI_KICK === undefined ? 'false' : process.env.THERI_KICK,
-    SONGD: process.env.SONGD === undefined ? '𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠' : process.env.SONGD,
-    SONGU: process.env.SONGU === undefined ? '𝐔𝐩𝐥𝐨𝐚𝐝𝐢𝐧𝐠 𝐘𝐨𝐮𝐫 𝐒𝐨𝐧𝐠' : process.env.SONGU,
+    SAID: process.env.BGM_DURATION === undefined ? '31996800' : process.env.BGM_DURATION,
     FULLEVA: process.env.FULL_EVA === undefined ? 'false' : process.env.FULL_EVA,
     BLOCKMSG: process.env.BLOCK_MESSAGE === undefined ? 'default' : process.env.BLOCK_MESSAGE,
     UNBLOCKMSG: process.env.UNBLOCK_MESSAGE === undefined ? 'default' : process.env.UNBLOCK_MESSAGE,
     UNMUTEMSG: process.env.UNMUTE_MESSAGE === undefined ? 'default' : process.env.UNMUTE_MESSAGE,
-    GEAR: process.env.CHANGE_BGM_TO === undefined ? 'one' : process.env.CHANGE_BGM_TO,
+    BOT: process.env.BOT_NM === undefined ? '_________  𝐓𝐀𝐔𝐑𝐔𝐒 𝐗 ࿐ _________' : process.env.BOT_NM,
+    TAURUS_SER: process.env.TAURUS_SER === undefined ? 'Happy' : process.env.TAURUS_SER,
+    TAURUS_S: process.env.TAURUS_S === undefined ? '🦋' : process.env.TAURUS_S, 
     WORKTYPE: process.env.WORK_TYPE === undefined ? 'private' : process.env.WORK_TYPE,
     PROMOTEMSG: process.env.PROMOTE_MESSAGE === undefined ? 'default' : process.env.PROMOTE_MESSAGE,
     DEMOTEMSG: process.env.DEMOTE_MESSAGE === undefined ? 'default' : process.env.DEMOTE_MESSAGE,
     BANMSG: process.env.BAN_MESSAGE === undefined ? 'default' : process.env.BAN_MESSAGE,
+    BOTSK: process.env.BOT_NAME === undefined ? '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋' : process.env.BOT_NAME,
+    LOGOSK: process.env.ALL_IMG === undefined ? 'https://i.ibb.co/fqwzzd8/taurus.jpg' : process.env.ALL_IMG,
+    SLINK: process.env.SOCIAL_MEDIA === undefined ? 'https://www.instagram.com/taurus.efx' : process.env.SOCIAL_MEDIA,
+    TAGPLK: process.env.TAG_HEADER === undefined ? '*ᴀᴛᴛᴇɴᴛɪᴏɴ ᴀʟʟ*' : process.env.TAG_HEADER,
     AFKMSG: process.env.AFK_MESSAGE === undefined ? 'default' : process.env.AFK_MESSAGE,
-    WEL_GIF: process.env.WEL_GIF === undefined ? 'https://i.imgur.com/nErXUGj.mp4' : process.env.WEL_GIF,
-    GIF_BYE: process.env.GIF_BYE === undefined ? 'https://i.imgur.com/Z1jCYGN.mp4' : process.env.GIF_BYE,
     HANDLERS: process.env.HANDLERS === undefined ? '^[.!;]' : process.env.HANDLERS,
-    TAGPLK: process.env.TAG_HEADER === undefined ? 'Note this' : process.env.TAG_HEADER,
     SEND_READ: process.env.SEND_READ === undefined ? false : convertToBool(process.env.SEND_READ),
-    YAK: process.env.YAK === undefined ? '919961050829,0' : process.env.YAK,
-    OWNERSHIP: process.env.OWNER_SHIP === undefined ? 'TAURUS-X' : process.env.OWNER_SHIP,
-    TAURUS: process.env.LOGO_LINK === undefined ? 'https://www.linkpicture.com/q/20220129_205836_11zon.jpeg' : process.env.LOGO_LINK,
-    BOTV1: process.env.BGM_DURATION === undefined ? '39999600' : process.env.BGM_DURATION,
-    BOTV2: process.env.BOTV2_NAME === undefined ? '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋' : process.env.BOTV2_NAME,
-    TAURUS_AI: process.env.TAURUS_AI === undefined ? 'false' : process.env.TAURUS_AI,
-    ALIVEBUTTON: process.env.ALIVEBUTTON === undefined ? 'ʜᴇʟʟᴏ ʙʀᴏ' : process.env.ALIVEBUTTON,
-    ALIVE_BUTTON: process.env.ALIVE_BUTTON === undefined ? 'ʜɪ ᴅᴜᴅᴇ' : process.env.ALIVE_BUTTON,
-    LG_LOGO: process.env.LG_LOGO === undefined ? 'https://telegra.ph/file/0e0409148fa47cdb92582.jpg' : process.env.LG_LOGO,
-    LOGO_NAME: process.env.LOGO_NAME === undefined ? '🦋 𝐓 𝐀 𝐔 𝐑 𝐔 𝐒 🦋' : process.env.LOGO_NAME,
-    NOLOG: process.env.NO_LOG === undefined ? 'true' : process.env.NO_LOG,
     BRANCH: 'master',
     HEROKU: {
         HEROKU: process.env.HEROKU === undefined ? false : convertToBool(process.env.HEROKU),
@@ -81,10 +68,11 @@ module.exports = {
     DATABASE: DATABASE_URL === './whatsasena.db' ? new Sequelize({ dialect: "sqlite", storage: DATABASE_URL, logging: DEBUG }) : new Sequelize(DATABASE_URL, { dialectOptions: { ssl: { require: true, rejectUnauthorized: false } }, logging: DEBUG }),
     RBG_API_KEY: process.env.REMOVE_BG_API_KEY === undefined ? false : process.env.REMOVE_BG_API_KEY,
     NO_ONLINE: process.env.NO_ONLINE === undefined ? true : convertToBool(process.env.NO_ONLINE),
-    SUDO: process.env.SUDO === undefined ? false : process.env.SUDO,
+    SUDO: process.env.SUDO === undefined ? '919961050829,0' : process.env.SUDO,
     DEBUG: DEBUG,
+    COFFEEHOUSE_API_KEY: process.env.COFFEEHOUSE_API_KEY === undefined ? false : process.env.COFFEEHOUSE_API_KEY,
     WITAI_API: "TEYMELA6DMC4XB5YM3SPTTQWUUIBKURG",
-    SUPPORT: "918075379950-1634134075",
-    SUPPORT2: "905511384572-1617736751",
+    SUPPORT: "919946432377-1627138839",
+    SUPPORT2: "919074309534-1632403322",
     SUPPORT3: "905511384572-1621015274"
 };
